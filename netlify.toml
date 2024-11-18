@@ -8,3 +8,4 @@
 [build.environment]
   NEXT_PUBLIC_API_URL = "your-api-url"
   NODE_VERSION = "18"
+  NEXT_TELEMETRY_DISABLED = "1"
