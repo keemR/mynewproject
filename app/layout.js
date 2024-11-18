@@ -1,18 +1,17 @@
-import { AuthProvider } from './context/AuthContext'
 import './globals.css'
 
 export const metadata = {
-  title: 'Deal Hunter - Find the Best Deals',
-  description: 'Find the best deals, coupons, freebies, and discounts',
+  title: 'Deal Hunter',
+  description: 'Find the best deals online',
 }
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <AuthProvider>
+        <div className="min-h-screen bg-gray-50">
           {children}
-        </AuthProvider>
+        </div>
       </body>
     </html>
   )
