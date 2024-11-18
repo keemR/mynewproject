@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export function Sidebar() {
   return (
     <aside className="space-y-8">
