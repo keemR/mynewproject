@@ -1,20 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Deal Hunter Website
+
+A modern deal hunting platform built with Next.js and AI-powered features.
+
+## Features
+
+- AI-powered deal optimization
+- Advanced user tracking
+- Content automation
+- Real-time analytics
+- Performance monitoring
+- Advanced monetization
+
+## Tech Stack
+
+- Next.js 14
+- TailwindCSS
+- OpenAI Integration
+- TensorFlow.js
+- Real-time Analytics
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/keemR/mynewproject.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Run the development server:
+```bash
+npm run dev
+```
+
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 

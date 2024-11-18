@@ -1,20 +1,14 @@
 'use client'
-import { createContext, useContext, useState, useEffect } from 'react'
+import { createContext, useContext, useState } from 'react'
 
-const AuthContext = createContext()
+const AuthContext = createContext({})
 
 export function AuthProvider({ children }) {
   const [user, setUser] = useState(null)
-  const [loading, setLoading] = useState(true)
 
-  const login = async (email, password) => {
-    // Implement login logic
-    setUser({ email, name: 'User Name', id: '123' })
-  }
-
-  const signup = async (email, password, name) => {
-    // Implement signup logic
-    setUser({ email, name, id: '123' })
+  const login = async (credentials) => {
+    // Implement login logic here
+    setUser({ id: 1, name: 'Test User' })
   }
 
   const logout = () => {
@@ -22,16 +16,10 @@ export function AuthProvider({ children }) {
   }
 
   return (
-    <AuthContext.Provider value={{ user, login, signup, logout, loading }}>
+    <AuthContext.Provider value={{ user, login, logout }}>
       {children}
     </AuthContext.Provider>
   )
 }
 
-export const useAuth = () => {
-  const context = useContext(AuthContext)
-  if (context === undefined) {
-    throw new Error('useAuth must be used within an AuthProvider')
-  }
-  return context
-} 
+export const useAuth = () => useContext(AuthContext) 
